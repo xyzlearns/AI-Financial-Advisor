@@ -6,7 +6,7 @@ st.title("💰 AI Financial Advisor")
 expense = st.number_input("Enter your monthly expense:", min_value=0)
 
 if st.button("Predict Spending Category"):
-    url = "http://127.0.0.1:5000/predict"
+    url = "https://ai-financial-advisor-tcp8.onrender.com/predict"
     data = {"expense": expense}
     response = requests.post(url, json=data)
 
